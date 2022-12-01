@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:screenOrientation="locked">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:background="#9DD3ED">
+
+            <TextView
+                android:id="@+id/textAciklamaKutusu"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="11dp"
+                android:textColor="#2D2E2E"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/textGunDB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textTarihDB" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cizgi2"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="135dp"
+                app:layout_constraintStart_toEndOf="@+id/textMusteriAdi"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textToplamLitre"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="116dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:text="30700 L"
+                android:textColor="#2D2E2E"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textAciklamaKutusu"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textTarihDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:text="12.08.2022"
+                android:textColor="#2D2E2E"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cizgi2"
+                app:layout_constraintStart_toEndOf="@+id/cizgi1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textGunDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Pazertesi"
+                android:textColor="#2D2E2E"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cizgi2"
+                app:layout_constraintStart_toEndOf="@+id/cizgi1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textMusteriAdi"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Mustafa Solak"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/wordColor"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_marginTop="50dp"
+                android:background="#0A2B83"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/wordColor"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:background="#0037FF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="-1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wordColor">
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cizgi1"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toEndOf="@+id/textMusteriAdi"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

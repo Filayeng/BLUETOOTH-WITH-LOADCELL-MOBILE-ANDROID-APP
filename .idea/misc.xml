@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/omero/Desktop/Programlar/Programlama/Projeler/Uygulama1/uygulama1/aractartmaca/app/src/main/res/layout/activity_bosaltma_ekrani.xml" value="0.20854700854700856" />
+        <entry key="..\:/Users/omero/Desktop/denemeler/asildeneme/app/src/main/res/drawable/edittextbackground.xml" value="0.2595" />
+        <entry key="..\:/Users/omero/Desktop/denemeler/asildeneme/app/src/main/res/drawable/edittextbacksett.xml" value="0.2595" />
+        <entry key="..\:/Users/omero/Desktop/denemeler/asildeneme/app/src/main/res/layout/activity_alinan_sut_goruntuleme.xml" value="0.264" />
+        <entry key="..\:/Users/omero/Desktop/denemeler/asildeneme/app/src/main/res/layout/activity_bosaltma_ekrani.xml" value="0.264" />
+        <entry key="..\:/Users/omero/Desktop/denemeler/asildeneme/app/src/main/res/layout/activity_customer_main_page.xml" value="0.25" />
+        <entry key="..\:/Users/omero/Desktop/denemeler/asildeneme/app/src/main/res/layout/activity_get_sut_save_screen.xml" value="0.176" />
+        <entry key="..\:/Users/omero/Desktop/denemeler/asildeneme/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/omero/Desktop/denemeler/asildeneme/app/src/main/res/layout/activity_select_device.xml" value="0.2259963768115942" />
+        <entry key="..\:/Users/omero/Desktop/denemeler/asildeneme/app/src/main/res/layout/activity_setting_main_page.xml" value="0.264" />
+        <entry key="..\:/Users/omero/Desktop/denemeler/asildeneme/app/src/main/res/layout/activity_tum_musterileri_goruntuleme.xml" value="0.20854700854700856" />
+        <entry key="..\:/Users/omero/Desktop/denemeler/asildeneme/app/src/main/res/layout/device_info_layout.xml" value="0.1" />
+        <entry key="..\:/Users/omero/Desktop/denemeler/asildeneme/app/src/main/res/layout/wordshett1.xml" value="0.8" />
+        <entry key="..\:/Users/omero/Desktop/denemeler/asildeneme/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.124" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

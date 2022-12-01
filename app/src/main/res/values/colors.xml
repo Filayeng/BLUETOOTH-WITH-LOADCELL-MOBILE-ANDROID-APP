@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#158bda</color>
+    <color name="purple_500">#2896d1</color>
+    <color name="purple_700">#2896d1</color>
+    <color name="teal_200">#ff03dac5</color>
+    <color name="teal_700">#ff018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pageColor">#0f394e</color>
+    <color name="sheetColor">#9DD3ED</color>
+    <color name="butFalsecColor">#454649</color>
+</resources>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainLayout"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/butKalibrasyon"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/pageColor"
+        android:text="KALİBRE ET"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalDataText2" />
+
+    <Button
+        android:id="@+id/butKaydet"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:text="Kaydet"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butKalibrasyon" />
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="106dp"
+        android:layout_height="68dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="@color/pageColor"
+        android:text="Bağlan"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#ffffff"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="@android:color/background_light"
+        app:titleTextColor="@android:color/background_light" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sonAlinanDataText"
+        android:layout_width="267dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:text="0 L"
+        android:textColor="#000000"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/totalDataText2"
+        android:layout_width="268dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:text="0 L"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sonAlinanDataText" />
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/butPage1"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pageColor"
+            app:icon="@drawable/truck"
+            app:iconGravity="top"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/butPage2"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:icon="@drawable/person"
+            app:iconGravity="top"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/butPage3"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:icon="@drawable/setting"
+            app:iconGravity="top"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/truckImageView"
+        android:layout_width="379dp"
+        android:layout_height="301dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/truck0" />
+
+    <Button
+        android:id="@+id/butTart"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/pageColor"
+        android:text="TART"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalDataText2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginBottom="10dp"
+        android:text="Araç Tartmaca"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <EditText
+        android:id="@+id/tarihMainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="17 Eylül 2022 Pazartesi"
+        android:textColor="#716b6b"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butKaydet" />
+
+    <EditText
+        android:id="@+id/saatMainText"
+        android:layout_width="104dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="-20dp"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="13:39"
+        android:textColor="#716b6b"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tarihMainText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="98dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="13dp"
+        android:text=" Toplam : "
+        android:textColor="#7e7777"
+        android:textSize="24sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/sonAlinanDataText"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/truckImageView" />
+
+    <TextView
+        android:id="@+id/al_verLabel"
+        android:layout_width="105dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="-18dp"
+        android:layout_marginEnd="13dp"
+        android:text="Son Alınan : "
+        android:textColor="#7e7e7e"
+        android:textSize="22sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/sonAlinanDataText"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/truckImageView" />
+
+    <TextView
+        android:id="@+id/connectInfoBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="Hiçbir cihaza bağlanılmadı."
+        android:textColor="#f6f6f6"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

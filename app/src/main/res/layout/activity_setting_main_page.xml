@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="192dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittextbacksett"
+        android:ems="10"
+        android:hint="Süt"
+        android:inputType="textPersonName"
+        android:paddingStart="3dp"
+        android:shadowColor="#ffffff"
+        android:text="Araç Kağasitesi (L) :"
+        android:textSize="21sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="192dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittextbacksett"
+        android:ems="10"
+        android:hint="Süt"
+        android:inputType="textPersonName"
+        android:shadowColor="#ffffff"
+        android:text=" Süt KG/L Çarpanı :"
+        android:textSize="22sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butHardReset" />
+
+    <Button
+        android:id="@+id/butCloudBackup"
+        android:layout_width="388dp"
+        android:layout_height="75dp"
+        android:gravity="left|center_vertical|center_horizontal|center"
+        android:text="Verileri Buluta Yedekle"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butDeviceBackup" />
+
+    <Button
+        android:id="@+id/butEssSetting"
+        android:layout_width="388dp"
+        android:layout_height="75dp"
+        android:gravity="left|center_vertical|center_horizontal|center"
+        android:text="Varsayılan Ayarlara Dön"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butCloudBackup" />
+
+    <Button
+        android:id="@+id/butHardReset"
+        android:layout_width="388dp"
+        android:layout_height="75dp"
+        android:gravity="left|center_vertical|center_horizontal|center"
+        android:text="Tüm Verileri Sıfırla"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butEssSetting" />
+
+    <Button
+        android:id="@+id/butDeviceBackup"
+        android:layout_width="388dp"
+        android:layout_height="75dp"
+        android:gravity="left|center_vertical|center_horizontal|center"
+        android:text="Verileri Cihaza Yedekle"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butCalibSett" />
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/butPage1S"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:icon="@drawable/truck"
+            app:iconGravity="top"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/butPage2S"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:icon="@drawable/person"
+            app:iconGravity="top"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/butPage3S"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pageColor"
+            app:icon="@drawable/setting"
+            app:iconGravity="top"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="@android:color/background_light"
+        app:titleTextColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/connectInfoBox313"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="Hiçbir cihaza bağlanılmadı."
+        android:textColor="#f6f6f6"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginBottom="10dp"
+        android:text="Araç Tartmaca"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/page311ToolbarDate"
+        android:layout_width="140dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:text="17 Eylül 2022"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/page312ToolbarDay"
+        android:layout_width="140dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Pazartesi"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787" />
+
+    <Button
+        android:id="@+id/butCalibSett"
+        android:layout_width="388dp"
+        android:layout_height="75dp"
+        android:gravity="left|center_vertical|center_horizontal|center"
+        android:text="Kalibrasyon Ayarları"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/inputTankerCap"
+        android:layout_width="192dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/edittextbacksett"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Süt"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:shadowColor="#ffffff"
+        android:text="1000"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputMultipier" />
+
+    <EditText
+        android:id="@+id/inputMultipier"
+        android:layout_width="192dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/edittextbacksett"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Süt"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:shadowColor="#ffffff"
+        android:text="1.1999"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butHardReset" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
