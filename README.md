@@ -4,4 +4,6 @@
 
 > - [Working Video of the System](https://youtu.be/k3p3ZANACGY) <br/>
 
-This mobile application gets data from loadcell via Bluetooth .
+### Working Prenciple
+> - This mobile application gets data from loadcell via Bluetooth .
+> - This application has been developed using Java in Android Studio. Data is read from the Loadcell through Bluetooth, processed, and stored in a database through the > > - application. These data can be saved in the database when unloading the vehicle.
